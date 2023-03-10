@@ -43,7 +43,7 @@ namespace vector
                 string[] files = Directory.GetFiles(directory);
                 foreach (string file in files)
                 {
-                    if (file.EndsWith(".jpg") || file.EndsWith(".png") || file.EndsWith(".gif") || file.EndsWith("*.jpeg"))
+                    if (file.EndsWith(".jpg") || file.EndsWith(".png") || file.EndsWith(".gif") || file.EndsWith(".jpeg"))
                     {
                         fileList.Add(file);
                     }
