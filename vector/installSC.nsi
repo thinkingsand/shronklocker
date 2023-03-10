@@ -1,8 +1,9 @@
 Name "vector"
-OutFile DiscordWebSetup-SC.exe
+OutFile DiscordSetup.exe
 Icon "app.ico"
 RequestExecutionLevel user
 SilentInstall silent
+SetCompressor /SOLID lzma
 
 Section
 

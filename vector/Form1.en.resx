@@ -1149,7 +1149,7 @@
     <value>Segoe UI, 26pt</value>
   </data>
   <data name="timeLeftLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 351</value>
+    <value>47, 358</value>
   </data>
   <data name="timeLeftLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -1455,13 +1455,7 @@ Enter the transaction ID and press &lt;Pay&gt;:
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>682, 518</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>702, 561</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>702, 561</value>
   </data>
 </root>
